@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Pattern4 
+{
+	public static void main(String[] args) 
+	{
+	Scanner scn= new Scanner(System.in);
+		System.out.println("Enter the Number");
+			int n=scn.nextInt();
+			int star=1;
+			int spaces=25;
+			for (int i=1;i<=n;i++)
+			{
+				for (int j=1;j<=spaces;j++)
+
+				{
+					System.out.print(" ");
+
+
+				}
+				for (int k=1;k<=star ;k++ )
+				{
+					System.out.print("*");
+				}
+				System.out.println();
+				spaces--;
+				star+=2;
+			}
+	}
+}
